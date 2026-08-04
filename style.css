@@ -159,3 +159,36 @@ body {
         text-align: center;
     }
 }
+/* Estilo do Botão de Curtida */
+.post-actions {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #2a2a35;
+}
+
+.like-btn {
+    background-color: #22222e;
+    color: #ffffff;
+    border: 1px solid #d4af37;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.like-btn:hover {
+    background-color: #d4af37;
+    color: #000000;
+}
+
+/* Classe ativada via JS quando o post for curtido */
+.like-btn.liked {
+    background-color: #d4af37;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
